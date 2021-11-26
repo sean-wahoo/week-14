@@ -15,8 +15,6 @@ public:
     {
         numDoors = d;
     }
-    string getMan() const;
-    int getYear() const;
     int getNumDoors() const;
     void displayInfo() const;
 };
