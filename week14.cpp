@@ -35,8 +35,6 @@ int main()
     cout << "=== ENTERING VEHICLE INFORMATION ===" << endl;
     cout << "Enter the manufacturer: \n-> ";
     getline(cin, vehicleMan);
-    cin.clear();
-    cin.ignore();
     cout << "Enter the year built: " << endl;
     strict_int(vehicleYear);
 
@@ -48,11 +46,11 @@ int main()
     int carYear;
     int carDoors;
 
+    cin.clear();
+    cin.ignore();
     cout << "=== ENTERING CAR INFORMATION ===" << endl;
     cout << "Enter the manufacturer: \n-> ";
     getline(cin, carMan);
-    cin.clear();
-    cin.ignore();
     cout << "Enter the year built: " << endl;
     strict_int(carYear);
     cout << "Enter the number of doors it has: " << endl;
@@ -62,14 +60,14 @@ int main()
     c->displayInfo();
     delete c;
 
+    cin.clear();
+    cin.ignore();
     string truckMan;
     int truckYear;
     int truckTowing;
     cout << "=== ENTERING TRUCK INFORMATION ===" << endl;
     cout << "Enter the manufacturer: \n-> ";
     getline(cin, truckMan);
-    cin.clear();
-    cin.ignore();
     cout << "Enter the year built: " << endl;
     strict_int(truckYear);
     cout << "Enter the towing capacity for the truck: " << endl;
