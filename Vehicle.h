@@ -17,9 +17,9 @@ public:
         year = y;
     };
 
-    string getMan() const;
-    int getYear() const;
-    void displayInfo();
+    virtual string getMan() const;
+    virtual int getYear() const;
+    virtual void displayInfo() const;
 };
 
 #endif

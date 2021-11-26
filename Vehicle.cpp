@@ -12,7 +12,7 @@ int Vehicle::getYear() const
     return year;
 }
 
-void Vehicle::displayInfo()
+void Vehicle::displayInfo() const
 {
     cout << "=== VEHICLE INFO ===" << endl;
     cout << "Manufacturer: " << manufacturer << endl;
