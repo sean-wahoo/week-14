@@ -1,6 +1,7 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -19,7 +20,12 @@ public:
 
     string getMan() const;
     int getYear() const;
-    virtual void displayInfo() const;
+    virtual void displayInfo()
+    {
+        cout << "=== VEHICLE INFO ===" << endl;
+        cout << "Manufacturer: " << manufacturer << endl;
+        cout << "Year built: " << year << endl;
+    }
 };
 
 #endif
