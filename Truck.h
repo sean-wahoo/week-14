@@ -2,7 +2,7 @@
 #define TRUCK_H
 
 #include <string>
-#include "Vehicle.cpp"
+#include "Vehicle.h"
 using namespace std;
 
 class Truck : public Vehicle
@@ -16,7 +16,12 @@ public:
         towing = t;
     }
     int getTowing() const;
-    void displayInfo() const;
+    void displayInfo() override
+    {
+        Vehicle::displayInfo();
+        cout << "=== TRUCK INFO ===" << endl;
+        cout << "Towing capacity: " << towing << endl;
+    }
 };
 
 #endif

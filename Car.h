@@ -1,7 +1,7 @@
 #ifndef CAR_H
 #define CAR_H
-#include "Vehicle.cpp"
 #include <string>
+#include "Vehicle.h"
 
 using namespace std;
 
@@ -16,7 +16,12 @@ public:
         numDoors = d;
     }
     int getNumDoors() const;
-    void displayInfo() const;
+    void displayInfo() override
+    {
+        Vehicle::displayInfo();
+        cout << "=== CAR INFO == " << endl;
+        cout << "Number of doors: " << numDoors << endl;
+    }
 };
 
 #endif
