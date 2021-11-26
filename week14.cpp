@@ -40,7 +40,7 @@ int main()
 
     Vehicle *v = new Vehicle(vehicleMan, vehicleYear);
     v->displayInfo();
-    delete v;
+    delete v; // is this a good way to do this?
 
     string carMan;
     int carYear;
